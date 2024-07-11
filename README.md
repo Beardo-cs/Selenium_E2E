@@ -28,3 +28,4 @@ This project serves as a boilerplate for automating web applications across vari
 
 **Note**: By default, if no Maven profiles are selected, the tests will be executed on the `chrome` browser and in the `dev` environment.
 # Selenium_E2E
+# Selenium_E2E
