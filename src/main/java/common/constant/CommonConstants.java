@@ -7,14 +7,6 @@ import java.time.Duration;
 
 import static common.constant.Browser.CHROME;
 
-/**
- * Project Name    : selenium-java-web-automation-demo
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 24/7/23
- * Time            : 1:44 pm
- * Description     :
- **/
 
 public class CommonConstants {
     private final static Logger logger = LogManager.getLogger();

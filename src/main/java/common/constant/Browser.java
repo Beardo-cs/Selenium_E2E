@@ -1,14 +1,5 @@
 package common.constant;
 
-/**
- * Project Name    : selenium-java-web-automation-demo
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 21/7/23
- * Time            : 11:02 pm
- * Description     :
- **/
-
 public class Browser {
     public static final String CHROME = "chrome";
     public static final String HEADLESS_CHROME = "headless-chrome";

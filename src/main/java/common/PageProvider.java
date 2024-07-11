@@ -1,23 +1,23 @@
 package common;
 
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import page.BasePage;
 import page.LoginPage;
 import page.NavigationBar;
 
-/**
- * Project Name    : selenium-java-web-automation-demo
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 21/7/23
- * Time            : 10:28 pm
- * Description     :
- **/
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 
 public class PageProvider extends BasePage {
     public PageProvider(WebDriver driver) {
         super(driver);
     }
+
+
 
     public NavigationBar getNavigationBar() {
         return new NavigationBar(driver);

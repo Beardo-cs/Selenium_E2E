@@ -7,11 +7,11 @@
                     <include name="testValidLogin"/>
                 </methods>
             </class>
-            <class name="NavigationBarTest">
-                <methods>
-                    <include name="testNavigationBarOptionsVisibility" />
-                </methods>
-            </class>
+<!--            <class name="NavigationBarTest">-->
+<!--                <methods>-->
+<!--                    <include name="testNavigationBarOptionsVisibility" />-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>

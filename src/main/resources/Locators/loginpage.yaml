@@ -1,0 +1,7 @@
+elements:
+  userName:
+    en_US:
+      web: //*[@text='username']
+  password:
+    en_US:
+      web: //*[@text='password']

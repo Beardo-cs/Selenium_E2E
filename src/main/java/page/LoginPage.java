@@ -10,6 +10,7 @@ public class LoginPage extends BasePage {
 
     public void login(String username, String password) {
         inputUsername(username);
+        System.out.println("Fetch the Locator from Yaml file " + getLocator("inputField"));
         inputPassword(password);
         clickLoginButton();
     }

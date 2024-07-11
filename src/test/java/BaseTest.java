@@ -16,15 +16,6 @@ import static common.constant.CommonConstants.*;
 import static util.driver.WebDriverHolder.getDriver;
 import static util.driver.WebDriverHolder.setDriver;
 
-/**
- * Project Name    : selenium-java-web-automation-demo
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 21/7/23
- * Time            : 10:26 pm
- * Description     :
- **/
-
 @Listeners(TestAnalyzeReportListener.class)
 public class BaseTest {
     private final WebDriverService driverService = new WebDriverFactory().getDriverService();

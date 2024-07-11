@@ -7,15 +7,6 @@ import static common.constant.NavigationBarOption.*;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-/**
- * Project Name    : selenium-java-web-automation-demo
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 21/7/23
- * Time            : 10:26 pm
- * Description     :
- **/
-
 public class NavigationBarTest extends BaseTest {
     @DataProvider(name = "navigationBarOptionsDataProvider")
     public Object[][] getNavigationBarOptions() {

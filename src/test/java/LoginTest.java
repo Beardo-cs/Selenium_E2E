@@ -5,15 +5,6 @@ import static common.constant.ApplicationConstants.LOGIN_USERNAME;
 import static common.constant.NavigationBarOption.LOG_IN;
 import static org.testng.Assert.assertEquals;
 
-/**
- * Project Name    : selenium-java-web-automation-demo
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 21/7/23
- * Time            : 10:26 pm
- * Description     :
- **/
-
 public class LoginTest extends BaseTest {
     @Test(description = "Verify that a user can login to the application using the correct credentials")
     public void testValidLogin() {
