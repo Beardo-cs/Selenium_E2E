@@ -27,9 +27,4 @@ This project serves as a boilerplate for automating web applications across vari
       `mvn clean test -Psafari,uat,regression-test`
 
 **Note**: By default, if no Maven profiles are selected, the tests will be executed on the `chrome` browser and in the `dev` environment.
-
-## License
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/License_icon-mit-2.svg/2000px-License_icon-mit-2.svg.png" alt="MIT License" width="100" height="100"/> [MIT License](https://opensource.org/licenses/MIT)
-
-## Copyright
-Copyright 2023 [MaxSoft](https://maxsoftlk.github.io/).
+# Selenium_E2E
