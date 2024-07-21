@@ -3,6 +3,7 @@ package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.yaml.snakeyaml.Yaml;
@@ -18,6 +19,21 @@ public class BasePage {
     private Map<String, Object> elements;
 
     public BasePage(WebDriver driver) {
+        // Authentication username & password
+        String username = "admin";
+        String password = "admin";
+// Get the devtools from the running driver and create a session
+        DevTools devTools = driver.get;
+        devTools.createSession();
+// Enable the Network domain of devtools
+        devTools.send(Network.enable(Optional.of(100000), Optional.of(100000), Optional.of(100000)));
+        String auth = username + ":" + password;
+// Encoding the username and password using Base64 (java.util)
+        String encodeToString = Base64.getEncoder().encodeToString(auth.getBytes());
+// Pass the network header -> Authorization : Basic <encoded String>
+        Map<String, Object> headers = new HashMap<>();
+        headers.put("Authorization", "Basic " + encodeToString);
+        devTools.send(Network.setExtraHTTPHeaders(new Headers(headers)));
         BasePage.driver = driver;
         wait = new WebDriverWait(driver, EXPLICIT_WAIT_IN_SECONDS);
         loadYamlFile(getClass().getSimpleName().toLowerCase() + ".yaml");
